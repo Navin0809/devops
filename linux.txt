@@ -1,0 +1,43 @@
+Basic linux commands
+
+ls
+list files
+
+pwd
+present working directory
+
+cd
+change directory
+
+ls -ltr
+gives complete info about files
+
+touch
+create file
+
+mkdir 
+create directory
+
+free -g
+shows memory
+
+nproc
+no of processors/cpu
+
+df -h 
+storage disks
+
+top / htop
+complete info about system stats
+
+
+ 
+
+
+
+
+
+
+
+
+
