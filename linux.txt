@@ -18,6 +18,13 @@ create file
 mkdir 
 create directory
 
+rm
+remove files
+
+rm -rf
+remove directory
+
+
 free -g
 shows memory
 
@@ -30,8 +37,39 @@ storage disks
 top / htop
 complete info about system stats
 
+man <command name>
+help
 
- 
+ps -ef
+displays all processes
+
+grep 
+filter the output
+
+ps -ef | grep "amazon"
+filters amazon process from the ps -ef
+
+pipe
+sends the output of first command to second command
+
+awk
+filters the specific column
+
+ps -ef | grep "amazon" | awk -F" " '{print $2}'
+
+curl <url>
+get the info from the url
+curl <url> | grep error
+
+wget <url>
+downloads the file
+
+sudo find / -name <file name>
+
+sudo su -
+to change to root
+
+
 
 
 

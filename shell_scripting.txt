@@ -1,0 +1,30 @@
+shebang
+#!bin/bash
+bash/dash/sh/ksh executables
+
+#comment
+echo
+add the content
+
+cat 
+print the content
+
+PERMISSIONS
+
+chmod < value > <file name>
+grants permissions to the  files
+
+user | group | others
+
+4 read
+2 write
+1 execute
+
+4 - read user
+4 - read group
+4 - read others
+
+7 - read + write + exec user
+7 - read + write + exec group
+7 - read + write + exec others
+
