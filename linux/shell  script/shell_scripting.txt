@@ -28,3 +28,17 @@ user | group | others
 7 - read + write + exec group
 7 - read + write + exec others
 
+
+conditions
+if else
+a=4
+b=5
+
+if [ $a > $b ]
+then
+    echo 'a is greater than b'
+else 
+    echo 'b is greater than a'
+fi
+
+for loop
