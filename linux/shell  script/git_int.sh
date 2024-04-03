@@ -1,6 +1,14 @@
 #!/bin/bash
 
+#############READ ME 
+#export username=""
+#export token=""
+#two arguments at the time of  running the script
+#./<filename> <org name> <repo name>
+#sudo apt install jq -y
+#############
 # GitHub API URL
+
 API_URL="https://api.github.com"
 
 # GitHub username and personal access token
