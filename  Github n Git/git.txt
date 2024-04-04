@@ -1,0 +1,67 @@
+version control system
+ 
+ Git commands
+ 
+ git init
+ initializes  a repo
+   
+ git status
+ shows status of files
+
+ git add . / filename
+ adds files to git repo to track
+
+ git diff
+ shows exact changes made
+
+ git commit -m ""
+
+ git log
+ shows logs
+
+ git reset --hard <commit id>
+ changes to the respective commit id
+
+ share local git repo code to others
+ github/self hosted / bit bucket or else
+
+ Branching:
+
+ main/master
+ feature 
+ hot fix
+ release
+
+ git remote -v
+ shows remote origin
+
+ git remote add origin <repo url>
+ adds remote origin
+
+ git clone
+ clone the code from repo
+
+ ssh-keygen -t rsa
+ generates new key
+ 
+ git checkout -b <branch name> 
+ creates new branch
+
+ git branch
+ shows branches
+
+ git checkout <branch name>
+ switches branch
+
+ git cherry-pick <commit id>
+ merges code 
+ easy when there are one or two files
+
+ git merge
+ changes at top after main branch changes
+
+ git rebase
+ we get linear commit history
+ changes happens before the main branch
+
+ 
