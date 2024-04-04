@@ -1,0 +1,29 @@
+Ansible
+
+configuration management
+The need of configuration of servers
+
+upgrades
+secure patches
+installations
+
+with the advancement cloud,no of servers increased,size reduced of microservices
+
+popular tools:
+puppet,chef,Ansible
+
+mostly adopted Ansible
+
+Differences
+puppet       ||  Ansible
+pull             push
+master,slave     Agentless
+(architecture)   dynamic inventory
+                 good with win/linux
+                 simple(yaml manifest)
+ 
+ Disadvances of ansible :
+ 
+debugging
+support windows
+performance               
