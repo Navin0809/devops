@@ -85,6 +85,11 @@ vi playbook.yml
   service:
     name:nginx
     state: started
-    
+
 ansible-playbook -i inventory <playbook name>
+
+ansible roles
+to make tasks easy of writing ansible hard playbooks
+
+ansible-galaxy role init kubernetes
 
