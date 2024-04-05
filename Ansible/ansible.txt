@@ -7,7 +7,7 @@ upgrades
 secure patches
 installations
 
-with the advancement cloud,no of servers increased,size reduced of microservices
+with the advancement of cloud,no of servers increased,size reduced of microservices
 
 popular tools:
 puppet,chef,Ansible
@@ -26,4 +26,65 @@ master,slave     Agentless
  
 debugging
 support windows
-performance               
+performance     
+
+
+
+Hands on#########
+
+sudo apt install ansible
+
+passwordless authentication
+
+source server:
+ssh-keygen
+/home/ubuntu/.ssh/
+cat the pub key and copy the data
+
+target server:
+vi authorized keys
+paste the content /done
+
+Ansible playbook:
+the  file which contains multiple commands  to execute/same as shell script
+
+Ansbile adhoc commands:
+short commands to execute
+
+inventory file
+contains the ip of target servers
+
+ansible -i inventory all -m "shell" -a "touch <filename>"
+
+grouping of server ips in inventory file
+
+Go the inventory file:
+[webservers]
+ip's
+
+[dbservers]
+ip's
+
+ansible -i inventory webservers -m "shell" -a "touch <filename>"
+
+ansible playbook-how to:
+
+vi playbook.yml
+
+---
+-name:install and start nginx
+ hosts:all
+ become:root
+
+ tasks:
+ -name:install nginx
+  apt:
+     name:nginx
+     state: present
+ -name: start nginx
+  service:
+    name:nginx
+    state: started
+    
+ansible-playbook -i inventory <playbook name>
+
