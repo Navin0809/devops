@@ -1,0 +1,68 @@
+Iac
+infrastructure as code
+
+every csp has their own tools
+
+we need genric approach to infra as code
+as every cloud provider as their own tools 
+
+Terraform is the generic approach for Iac
+Api as code
+
+Terraform plan:
+terraform supports dry run
+dry run: test run 
+
+install terraform :
+
+basic commands:
+
+terraform init -initialize
+terraform plan -dry run
+terraform apply -created real infrastructure
+terraform destroy
+
+navigate to the file path local_state and type terraform init
+main.tf (file name)
+
+terrraform authenticates only if its preconfigured aws cli
+
+output.tf
+output data 
+
+input.tf
+
+vairable.tf
+store the variables
+
+terraform.tfstate
+tracks all the infra created previously 
+
+we cannot store state file in git or local machine
+as it contains all sensitive info
+and multiple user/s merges issue
+
+we must store in remote backend
+ex-s3 
+
+use dynamo db ,which locks the state file ,which results in no conflicts
+
+remote backend:
+
+remote_state
+
+terraform modules:
+whenever there is a reusable code
+they can reference this modules,pre written 
+
+
+problems:
+state file is a single point of failure
+
+manual changes cannot be identified,not auto corrected
+
+not a gitops friendly tool,nor with flux or argo cd 
+
+
+
+
