@@ -1,0 +1,15 @@
+need to install docker pipeline plugin
+
+freestyle project:
+dialogue type input boxes,we cannot share the code
+
+
+pipeline:
+declarative approach
+
+groovy script language
+
+multi stage:
+
+
+

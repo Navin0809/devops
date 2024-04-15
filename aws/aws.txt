@@ -5,3 +5,4 @@ aws ec2 describe-instances
 aws ec2 start-instances --instance-ids i-02206d0acf5ea82e2
 
 aws ec2 stop-instances --instance-ids i-02206d0acf5ea82e2
+

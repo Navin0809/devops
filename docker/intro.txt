@@ -1,0 +1,10 @@
+docker installation creates docker group
+
+we need to add services to docker group to access docker daemon
+
+command
+sudo su -
+usermod -aG docker jenkins
+usermod -aG docker ubuntu
+systemctl restart docker
+
